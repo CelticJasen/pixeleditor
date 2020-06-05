@@ -1,6 +1,7 @@
 const mainContainer = document.getElementById("mainContainer");
 let mouseDepressed = false;
 let squaresPerSide = window.prompt("How many squares per side?");
+let erase = false;
 
 function makeRows(rows, cols){
     mainContainer.style.setProperty('--grid-rows', rows);
@@ -13,8 +14,13 @@ function makeRows(rows, cols){
 };
 
 function changeSquare(e){
+
     if(mouseDepressed){
-        this.className = "gridItemDown";
+        if(erase){
+            this.className = "gridItem";
+        }else{
+            this.className = "gridItemDown";
+        }
     }
 }
 
@@ -40,6 +46,15 @@ function clear(){
 
     squaresPerSide = window.prompt("How many squares per side?");
     makeRows(squaresPerSide, squaresPerSide);
+}
+
+function eraser(){
+    erase = !erase;
+    if(erase){
+        document.getElementById("eraseButton").innerText = "Draw";
+    }else{
+        document.getElementById("eraseButton").innerText = "Erase";
+    }
 }
 
 makeRows(squaresPerSide, squaresPerSide);
