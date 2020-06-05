@@ -21,11 +21,18 @@
     left: 600px;
 }
 
+#eraseButton {
+    display: flex;
+    position: absolute;
+    top: 600px;
+    left: 660px;
+}
+
 .gridItem {
-    border: 1px solid rgb(150, 37, 37);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .gridItemDown {
-    border: 1px solid rgb(150, 37, 37);
-    background-color: green;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
