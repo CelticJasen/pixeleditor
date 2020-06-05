@@ -1,0 +1,31 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#mainContainer {
+    display: grid;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50px;
+    left: 500px;
+    grid-template-columns: repeat(var(--grid-cols), 50fr);
+    grid-template-rows: repeat(var(--grid-rows), 50fr);
+}
+
+#clearButton {
+    display: flex;
+    position: absolute;
+    top: 600px;
+    left: 600px;
+}
+
+.gridItem {
+    border: 1px solid rgb(150, 37, 37);
+}
+
+.gridItemDown {
+    border: 1px solid rgb(150, 37, 37);
+    background-color: green;
+}
