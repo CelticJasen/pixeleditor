@@ -17,6 +17,8 @@
 #clearButton {
     display: flex;
     position: absolute;
+    height: 50px;
+    width: 75px;
     top: 600px;
     left: 600px;
 }
@@ -24,7 +26,9 @@
 #eraseButton {
     display: flex;
     position: absolute;
-    top: 660px;
+    height: 50px;
+    width: 75px;
+    top: 600px;
     left: 660px;
 }
 
